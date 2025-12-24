@@ -21,3 +21,6 @@
 /toolchain/
 *.backup
 .DS_Store
+
+/.direnv
+/result
