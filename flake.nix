@@ -41,7 +41,21 @@
               wget
               pkgsCross.aarch64-multiplatform.gccStdenv.cc
 
+              bc
+              bison
+              cpio
+              cmake
+              curl
+              file
+              flex
+              nano
+              rsync
+              unzip
+              ubootTools
+              vim
               gawk
+              dialog
+              newt
             ] ++ pkgs.linux.nativeBuildInputs);
         }).env;
       };
