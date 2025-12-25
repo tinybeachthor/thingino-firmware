@@ -40,9 +40,28 @@
               unzip
               wget
               pkgsCross.aarch64-multiplatform.gccStdenv.cc
+	      glibc.dev
+	      libxcrypt
 
+              bc
+              bison
+              cpio
+              cmake
+              curl
+              file
+              flex
+              nano
+              rsync
+              unzip
+              ubootTools
+              vim
               gawk
+              dialog
+              newt
             ] ++ pkgs.linux.nativeBuildInputs);
+	  profile = ''
+	    export CMAKE_POLICY_VERSION_MINIMUM=3.5
+	  '';
         }).env;
       };
     });
